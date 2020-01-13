@@ -357,7 +357,7 @@ def full_results_processing(args, results, results_ts, lct, nuclear_boolean, h2_
 
         # Find portion of energy met by renewables
         if nuclear_boolean:  # Nuclear
-            rgt = lct[i] - np.sum(args.nuc_gen_mw) / avg_total_demand[j]
+            rgt = lct[i] - np.sum(args.nuc_gen_mw) / avg_total_demand[i]
         else:
             rgt = lct[i]
 
